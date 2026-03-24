@@ -1,0 +1,129 @@
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar{
+    width: 100%;
+    margin: 0%;
+
+    border: 1px solid;
+    background: #4a8cd6;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #f6f6f6;
+    font-weight: 700;
+    font-style: oblique;
+    
+    padding: 1rem 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover{
+    background: #6984bf;
+    box-shadow: 0 8px 32px rgba(147, 180, 234, 0.5);
+}
+.search-container input{
+    padding: 1rem;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fffdfd;
+    color: #878787;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.logo i{
+    font-size: 2rem; 
+    color: #1877f2; 
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+/* Navigation links */
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a{
+    color: #00000054;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items:flex-start;
+    gap: 0.5rem; 
+   
+}
+
+.nav-links a i{
+    font-size: 1.5rem; 
+}
+
+/* Underline animation */
+.nav-links a::after{
+    content:"";
+    position: absolute;
+    bottom:-5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #faf9f9;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.nav-links a:hover{
+    transform: translateY(-2px);
+}
+.Games {
+    background-color: #d6d4d4;
+    width: 20%;
+    max-height: 100%;
+    margin-top: 0%;
+}
+.top {
+    margin-top: -62%;
+    margin-left: 23%;
+}
